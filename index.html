@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+\<!DOCTYPE html>
 <html lang="ko">
 <head>
 <meta charset="UTF-8" />
@@ -4427,8 +4427,6 @@ function _cacheMealRows(rows, from, toStr) {
   console.log('[급식] 캐시 완료, 날짜 수:', Object.keys(mealCache).length);
 }
 
-switchTab('school');
-
 // ══════════════════════════════════════════════════════════════════════════════
 // 학사일정 시스템 (NEIS API)
 // ══════════════════════════════════════════════════════════════════════════════
@@ -4622,6 +4620,9 @@ function renderAcademic(events) {
     }
   };
 })();
+
+// patchInitSchoolTab 완료 후 최초 탭 진입 — loadAcademic()이 정상 호출됨
+switchTab('school');
 </script>
 </body>
 </html>
